@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"semanticevents-desc": "This extension provides functions to handle events using Semantics Mediawiki",
+	"semanticevents-i18n-welcome": "Welcome to the localization file of the SemanticEvents extension.",
+	"semanticevents-helloworld": "Hello world!",
+	"semanticevents-helloworld-intro": "Welcome to the \"Hello world\" special page of the SemanticEvents extension.",
+	"helloworld": "Hello world"
+}

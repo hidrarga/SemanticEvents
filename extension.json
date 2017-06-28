@@ -1,0 +1,53 @@
+{
+	"name": "SemanticEvents",
+	"version": "0.1.0",
+	"author": [
+		"HgO"
+	],
+	"url": "https://github.com/hidrarga/SemanticEvents",
+	"descriptionmsg": "semanticevents-desc",
+	"license-name": "GPL v2",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"SemanticEventsHooks": "SemanticEvents.hooks.php",
+		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+	},
+	"config": {
+		"SemanticEventsEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"SemanticEventsAlias": "SemanticEvents.i18n.alias.php"
+	},
+	"Hooks": {
+		
+		"ParserFirstCallInit": [
+			"SemanticEventsHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"SemanticEvents": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.semanticEvents.foo": {
+			"scripts": [
+				"modules/ext.semanticEvents.js",
+				"modules/ext.semanticEvents.foo.js"
+			],
+			"styles": [
+				"modules/ext.semanticEvents.foo.css"
+			],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SemanticEvents"
+	},
+	"SpecialPages": {
+		"HelloWorld": "SpecialHelloWorld"
+	},
+	"manifest_version": 1
+}
